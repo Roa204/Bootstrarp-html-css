@@ -1,0 +1,142 @@
+Resoluciones que trabaja Bootstrap son:
+575 x 600    
+767 x 600
+991 x 600
+1199 x 690
+1280 x 690
+
+parece que es por 480
+xs(x-small=extra pequeno)
+xs=col
+    Resoluciones
+xs ( < 575) Dispositivos para esa resolucion (pixeles px)
+sm (576 - 767) smort pequeno
+MD (768 - 991) MEDIUM
+LG (992 - 1199) LARGE
+XL (1200 > ) extra Large
+
+ - container 
+ - container-fluid 
+ - row 
+ - col = col-xs-12, - col-sm - col-md - col-lg - col-xl 
+
+.border: Es otra clase de bootstrap que nos va a dar un border al grid
+    d=display
+.d-none: Desapacere el elemento en todas las resoluciones
+    -   Escogemos la resolucion que queremosdonde desaparesca ejemplo
+.d-xs-none  d-sm-none : Desaparecera en esas resoluciones
+.d-block y d-inline: para el bloque y lenea tambien se pueden usar  d-sm-block y d-sm-inline
+.clearfix: lo que hacemos es que cuando haya mucho contenido cada elemento respeta su espacio no se va a unir
+.float-left y float-right: se alinea a sus posiciones
+.mx-auto: se centra (Pero se tiene que tener un width predefinido)
+
+-   IMPORTANTE en bootstrap se empieza trabajando desde pantalla pequena-movil, hasta la grande lo que se haga en la pequena vaafectar las otras resoluciones hasta que se diga lo contrario en alguna otra resolucion
+
+.justify-content-center: Se centra todo el contenedor o elemento
+.justify-content-start: Se queda al inicio
+.justify-content-end: va al final
+.justify-content-between: se alinean, distribuyen horizontalmente sin espacio a la derecha ni izquierda
+.justify-content-around: Se distribuyen horizontalmente con espacio a la derecha y a la izquierda
+-   Dependiendo de la altura del contenedor se alinea VERTICAL ASI:
+.align-items-center
+.align-items-start
+.align-items-end
+-   Alinear independentemente cada elemento antes era por bloque
+.align-self-start
+.align-self-center
+.align-self-end
+.fixed-top  quede fijo como un menu
+.fixed-bottom
+-   Para poner width solo es poner (w-25 o 50..)  y alto (h-50)
+
+-   Con SIGLAS son : 
+t   top
+b   bottom
+l   left
+r   right
+m   margin
+p   padding 
+Y entre estos se pueden combinar mt-5(margin-top) SOLO HASTA EL NUMERO 5
+
+.display-1 hasta 4 se agranda el texto y se modifica algo la letra
+.small texto con letra pequena
+.mark nos sombrea el elemento color crema
+.font-weight-bold TEXTO en negrita
+.font-weight-normal
+.font-weight-light mas fino y delgado
+.font-italic fuete italic
+.text-left TEXTO aleneado a la izquierda
+.text-center
+.text-right
+.text-justify : Justificar texto
+.text-nowrap : Para que todo el texto se escriba horizontalmente asi sea largo
+.text-lowercase : todo el TEXTO en minuscula
+.text-uppercase : TODO EN MAYUSCULA
+.text-capitalize : Cada Palabra Empieza Con Una Mayuscula Como Esta Escrito esto
+
+APRENDER
+
+primary  == azul
+secundary == otro gris
+dark == Gris oscuro
+light == Medio blanco
+danger == Rojo
+warning == amarillo como narajanja
+success == Verde
+info == medio azul
+white 
+
+poner color de fondo
+bg == background
+
+.bg-primary
+.bg-info .......
+
+COLOR EN EL TEXTO
+
+.text-muted : un gris 
+.text-primary
+
+
+PARA HACER TABLAS
+
+.table  lo acomoda como una tabla de una vez
+.table-striped para hacer una cebra
+.table-bordered bordes en todos los lados
+.table-hover Se sombre automaticamente al pasar el clic
+.table-dark TABLA oscura y sucesivamente con los colores de antes
+.table-sm Se vuelve un poco mas pequena la tabla
+.table-responsive-xs para hacer la tabla responsive desde esa resolucion hacia arriba, igual se pueden desde las otras resoluciones hacia arriba
+
+IMAGENES
+
+.img-fluid  Se va adaptando a las resoluciones con la margen en los costados
+.rounded    Para redondear los bordes tenuemente como un border-radius
+.rounded-circle  redondearla ovalo
+.img-thumbnail  Crear un marco minuatura a la imagen
+/////////////////////
+PARRAFOS-textos
+
+.jumbotron toma el texto ya sea parrafo el lo envuelve un un color de fondo con padding y border-radius y responsive
+.jumbotron-fluid sin margenes a la izquierda y derecha
+.alert deja el texto con cierta margen haciendo que resalte del resto
+.alert-success y el resto de colores...
+.alert-link <a>..Se adapta al color de fondo establecido el el section 
+
+Botones
+
+.btn :diseno simple
+.btn-primary y todoslos colores
+.btn-link boton de linkear
+
+con outline : Se le hace es un contorno al boton con su respectivo color y letra
+
+.btn-outline-primary
+.btn-lg .btn-lg: Para cambiar el tamano del boton (sirve solo con esos tamanos)
+.btn-block
+.btn-group : Agrupar varios botones en un solo bloque
+.btn-group-lg
+.btn-group-vertical :AGRUPAR DE forma VERTICAL
+
+2,37
+

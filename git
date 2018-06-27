@@ -1,0 +1,20 @@
+En la carpeta dentro de la consola 
+git add
+git commit -m 'firts commit'
+git puhs
+y ingresar la pass
+
+
+
+
+    d-table-cell puede servir para agrupar los tr en una caja y no en table
+    
+    
+    Guardar repositorio en github
+    entrar a la carpeta donde se va a guardar lo del repositorio
+    git init
+    pegar elgit remote.....git remote add origin https://github.com/Roa204/Bootstrarp-html-css.git
+    git add .(ojo con el punto)
+    git status
+    
+    

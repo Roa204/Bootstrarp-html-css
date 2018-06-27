@@ -1,0 +1,25 @@
+.borde{
+    background-color: gray;
+    height: 500px;
+    overflow-y: scroll;
+}
+.borde1{
+    background-color: aquamarine;
+    height: 50px;
+    text-align: center;
+}
+.borde2{
+    background-color: olivedrab;
+    height: 50px;
+    text-align: center;
+}
+.borde3{
+    background-color: orange;
+    height: 50px;
+    text-align: center;
+}
+.borde4{
+    background-color: lightgray;
+    height: 70px;
+    text-align: center;
+}

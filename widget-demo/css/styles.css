@@ -1,0 +1,11 @@
+@media only screen and (max-width: 990px) {
+  table {
+    display: table; } }
+
+@media only screen and (max-width: 1199px) {
+  .ocultar {
+    display: none; } }
+
+@media only screen and (max-width: 991px) {
+  .ocultar2 {
+    display: none; } }

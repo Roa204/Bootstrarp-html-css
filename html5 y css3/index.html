@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+       
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung&amp;subset=korean" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <p>Logo</p>
+    </header>
+    <!-- Elemento de linea (En una sola) -->
+    <nav>
+        <button class="nav_button" onclick="menu()">Menu</button>
+        <a href="" class="nav_enlace hid">Inicio</a>
+        <a href="" class="nav_enlace hid" >Help</a>
+        <a href="" class="nav_enlace hid">Please</a>
+        <a href="" class="nav_enlace hid">Forgive</a>         
+    </nav>
+    <!-- Elemento en bloque (hacia abajo) -->
+    <div class="bloque">
+            <a class="bloque2" href="">Help</a>
+            <a class="bloque2" href="">Please</a>
+            <a class="bloque2" href="">Otro</a>
+    </div>
+    <!-- Elemento de bloque (hacia abajo) a linea  -->
+    <section class="padre">
+        <p class="columna">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ullam itaque provident nulla nobis veritatis excepturi amet! Aspernatur, inventore esse enim nam omnis saepe, autem ab consectetur voluptates vitae nostrum?</p>
+
+        <p class="columna">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime nesciunt quae eligendi iure quo quasi amet! Obcaecati alias quidem mollitia, possimus odit, tempora est, error sequi corporis nihil ad.</p>
+
+        <p class="columna">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatum debitis, architecto iure illo, modi ipsum dignissimos perspiciatis nam, doloribus error id ut. Consequuntur tempore quis inventore ad officia blanditiis.</p>
+    </section>
+    <!-- <aside>Publicidad</aside> -->
+    <section class="container1 flex text_center">
+        <div class="columna1">
+            <h2>Plan Uno</h2>
+            <p class="precio">$ 500</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem animi perspiciatis quaerat quasi magnam error.</p>
+            <hr>
+            <ul>
+                <li>asdasdasd</li>
+                <li>asdasdasdasd</li>
+                <li>asdasdasdasdasd</li>
+            </ul>
+            <hr>
+            <a href="" class="btn_precio">Comprar</a>
+        </div>
+
+        <div class="columna1">
+            <h2>Plan Dos</h2>
+            <p class="precio">$ 500</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem animi perspiciatis quaerat quasi magnam error.</p>
+            <hr>
+            <ul>
+                <li>asdasdasd</li>
+                <li>asdasdasdasd</li>
+                <li>asdasdasdasdasd</li>
+            </ul>
+            <hr>
+            <a href="" class="btn_precio">Comprar</a>
+        </div>
+
+        <div class="columna1">
+            <h2>Plan Tres</h2>
+            <p class="precio">$ 500</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem animi perspiciatis quaerat quasi magnam error.</p>
+            <hr>
+            <ul>
+                <li>asdasdasd</li>
+                <li>asdasdasdasd</li>
+                <li>asdasdasdasdasd</li>
+            </ul>
+            <hr>
+            <a href="" class="btn_precio">Comprar</a>
+        </div>
+
+        <div class="columna1">
+            <h2>Plan Cuatro</h2>
+            <p class="precio">$ 500</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem animi perspiciatis quaerat quasi magnam error.</p>
+            <hr>
+            <ul>
+                <li>asdasdasd</li>
+                <li>asdasdasdasd</li>
+                <li>asdasdasdasdasd</li>
+            </ul>
+            <hr>
+            <a href="" class="btn_precio">Comprar</a>
+        </div>
+    </section>
+    <script>
+        function menu() {
+             let ancla = document.getElementsByClassName('nav_enlace');
+             for(let i=0; i < ancla.length; i++){
+                ancla[i].classList.toggle('hid');
+                //  con toggle si esta la clase la quita y si no la pone
+             }
+        }
+    </script>
+</body>
+</html> 

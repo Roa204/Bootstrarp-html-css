@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- para que sea compatible con internet explorer 9 y tambien para edge  -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container border">
+        <section class="row">
+            <section class="col">
+                <h1>Cabecera</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ducimus ut earum adipisci nesciunt repellat amet. Cum minima modi harum eveniet! Nostrum doloribus reprehenderit quia minima voluptatem consequuntur doloremque ipsum.</p>
+            </section>
+        </section>
+    </header>
+    <!-- poniendo -fluid damos a entender que va hacer un contenedor fluido, es decir que va a ocupar todas las margenes en la pantalla, pantalla completa,sin el se crean unas margenes a los costados -->
+    <section class="container-fluid">
+        <section class="row">
+            <!-- En total son 12 columnas en bootstrap, cada elemento se divide en 12 cada section con class col, el numero al lado de col el el numero de columnas vistuales ubicando un total de 12 -->
+            <!-- d=display
+            d-none: Desapacere el elemento en todas las resoluciones, hasta donde se vuelva a modificar
+            -   Escogemos la resolucion que queremosdonde desaparesca ejemplo
+            d-xs-none  d-sm-none : Desaparecera en esas resoluciones
+
+            -   IMPORTANTE en bootstrap se empieza trabajando desde pantalla pequena-movil, hasta la grande lo que se haga en la pequena vaafectar las otras resoluciones hasta que se diga lo contrario en alguna otra resolucion 
+        
+            -   Si queremos que en todas las vistas ocupen el elmento todo elbloque solo ponemos col12 sin necesidad de poner las demas resoluciones, esta afecta a todas-->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-2     d-none d-md-block text-center bg-info"> <p>UNO</p> </section>
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-8 text-center bg-success"> <p>DOS</p> </section>
+            <section class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2    d-none d-md-block text-center bg-warning"> <p>TRES</p> </section>
+            
+        </section>
+    </section>
+    <footer class="container border">
+        <section class="row">
+            <section class="col">
+                <h1>Pie</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, neque maiores. Exercitationem sed, distinctio harum vel consequatur nihil veritatis modi. Illum consectetur blanditiis, harum eos officiis suscipit corporis numquam ullam?</p>
+            </section>
+        </section>
+    </footer>
+    <hr>
+    <section class="container">
+        <!-- Se alinean a la izquierda y a la derecha en linea 
+        con clearfix lo que hacemos es que cuando haya mucho contenido cada elemento respeta su espacio no se va a unir-->
+        <section class="row">
+            <section class="col clearfix border">
+                <span class="float-left">IZQUIERDA</span>
+                <span class="float-right">DERECHA</span>
+            </section>
+            <section class="col clearfix border">
+                    <span class="float-left">IZQUIERDA</span>
+                    <span class="float-right">DERECHA</span>
+            </section>
+        </section>
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <!-- Que se alinee a la posicion que queramos en la resolucion querida
+        Ningun elemento se esta alineando en xs por eso van a la derecha-->
+            <section class="row d-block">
+                <section class="float-sm-right">UNO</section><br>
+                <section class="float-md-right">DOS</section><br>
+                <section class="float-lg-right">TRES</section><br>
+                <section class="float-xl-right">CUATRO</section><br>
+                <section class="float-none">CINCO</section>
+                
+            </section>
+    </section>
+    <hr>
+    <hr>
+    <!-- alinear horizintal -->
+    <section class="container border borde">
+        <section class="row justify-content-center borde1">
+            <section class="col-4 borde2"><p>UNO</p></section>
+            <section class="col-4 borde3"><p>DOS</p></section>
+        </section>
+        <br>
+        <section class="col-12">
+                <p class="text-justify jumbotron">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit aut quod illo numquam harum non provident, quae odit sequi iure laudantium quasi qui recusandae incidunt officiis nulla beatae inventore vel rem nam animi? Dolore necessitatibus quia amet alias eos sint, reprehenderit voluptate quidem. 
+                </p>
+        </section>
+        <br>
+        <section>
+            <p class="text-justify text-secundary bg-primary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit aut quod illo numquam harum non provident, quae odit sequi iure laudantium quasi qui recusandae incidunt officiis nulla beatae inventore vel rem nam animi? Dolore necessitatibus quia amet alias eos sint, reprehenderit voluptate quidem placeat ipsum qui itaque tempora possimus praesentium accusamus iusto unde corrupti quae repellat aperiam ducimus maxime ipsa, velit quis? Incidunt, nam. Repellat sunt inventore laudantium laboriosam? Temporibus blanditiis placeat suscipit aspernatur, omnis sit eligendi eum vitae ullam odit tenetur optio vel repellendus error saepe explicabo ratione! Fugiat qui nam eius. Omnis nam autem illum unde neque sit maiores, magni molestias nulla eum minima corporis ea nostrum a vitae nisi saepe repellat sequi? Nemo facere, obcaecati id est unde sequi, rem ut voluptas quae asperiores, rerum nulla veritatis non minus? Alias perspiciatis debitis perferendis ullam libero aliquid, iusto iure eos doloribus laborum atque ut, dignissimos non accusamus voluptatum nisi quod qui, laudantium veritatis est nemo  
+            </p>
+            <p class="alert alert-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ea aliquam culpa reprehenderit voluptates, minima nisi ab iure aut ad quos quasi molestiae atque repellendus laborum aspernatur, exercitationem, impedit maxime?
+                <a href="#" class="alert-link">Esto es un link con clase ALERT-LINK</a>
+                <a href="#">Otro Link SIN la Clase alert...</a>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid aspernatur eos laboriosam aperiam laborum tenetur? Quis similique eligendi laborum error atque, possimus obcaecati maxime commodi aliquam? Aspernatur, quae similique!
+            </p>
+        </section>
+    </section>
+
+    <hr>
+    <hr>
+    <!-- alinear vertical -->
+    <section class="container border bg-info">
+            <section class="row align-items-center justify-content-around borde1" style="height: 250px;">
+                <section class="col-3 borde2"><p>UNO</p></section>
+                <section class="col-3 borde3"><p>DOS</p></section>
+                <section class="col-3 borde2"><p>TRES</p></section>
+            </section>
+            <br>
+            <section>
+                <h2 class="display-4">Letras con el display</h2>
+            </section>
+            <!-- con esta nueva etiqueta es para abreviaturas
+                -Con la etiqueta kbd, es para atajos de teclado no la sombrea
+                -Con la etiqueta code, lo que hace es que todo quede horizontal no importa los    saltos de linea que demos
+                -Con la etiqueta span, declaramos elementos en linea
+                -Con la etiqueta Pre , si respeta los saltos de lines  -->
+            <section>
+                <p>Actualmente <abbr title="Lenguaje de marcas de hipertextos">HTML</abbr> es muy utilizado, ahora presionemos <kbd>Ctrl + c</kbd> para copiar </p>
+                <code>
+                    body{
+                        backgroud-color: black;
+                    }
+                </code>
+                <pre>
+                    body{
+                        backgroud-color: black;
+                    }
+                </pre>
+            </section>
+    </section>
+    <hr>
+    <hr>
+
+    <!-- alinear Independientemente -->
+    <section class="container border borde">
+            <section class="row borde1" style="height: 250px;">
+                <section class="col-3 align-self-start borde2"><p>UNO</p></section>
+                <section class="col-3 align-self-center borde3"><p>DOS</p></section>
+                <section class="col-3 align-self-end borde2"><p>TRES</p></section>
+            </section>
+    </section>
+    <hr>
+    <hr>
+
+    <section class="container">
+            <section class="row">
+                <table class="table table-striped table-hover table-dark table-responsive-xs">
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Martes</td>
+                        <td>Miercoles</td>
+                        <td>Jueves</td>
+                        <td>Viernes</td>
+                    </tr>
+                    <tr>   
+                        <td>10</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>   
+                        <td>10</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+               
+            </section>
+    </section>
+    <hr>
+    <hr>
+
+    <section class="container">
+        <section class="row">
+            <section class="col">
+                <img src="img/sistema-rejilla-filas-columnas-tamanios-pantalla.png" alt="hola" class="img-fluid img-thumbnail">
+            </section>
+        </section>
+    </section>
+    <hr>
+    <hr>
+    <section class="container">
+        <section class="row">
+            <section class="col alert alert-success">
+                <p>
+                    <!-- para cerrar el parrafo o formulario -->
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Felicidades </strong> Todo good
+                </p>
+            </section>
+        </section>
+    </section>
+    <hr>
+    <hr>
+    <section class="container">
+        <section class="row">
+            <section class="col">
+                <h1>BOTONES</h1>
+                <button type="button" class="btn btn-primary">ENVIAR</button>
+                <button type="button" class="btn btn-link">btn-link</button>
+                <h2>Con outline</h2>
+                <button class="btn btn-outline-primary">ENVIAR</button>
+                <button class="btn btn-outline-success btn-sm">Boton Con sm</button>
+                <button class="btn btn-outline-warning btn-lg">Boton Con lg</button>
+                <button class="btn btn-outline-info btn-lg">Boton Con lg</button>
+                <h1>Botones agrupados</h1>
+                <section class="btn-group">
+                    <button class="btn btn-primary">Hola1</button>
+                    <button class="btn btn-success">Hola2</button>
+                    <!-- Esto sirve con la libreria popper  ITEM-->
+                    <section class="btn-group">
+                        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Con items</button>
+                        <section class="dropdown-menu">
+                            <a href="" class="dropdown-item">aaa</a>
+                            <a href="" class="dropdown-item">bbbb</a>
+                            <a href="" class="dropdown-item">ccc</a>
+                            <button class="btn btn-outline-primary dropdown-item">boton</button>
+                        </section>
+                    </section>
+                </section>
+                <section class="btn-group btn-group-vertical">
+                    <button class="btn btn-primary">Hola1</button>
+                    <button class="btn btn-success">Hola2</button>
+                    <button class="btn btn-info">Hola3</button>
+                    
+                </section>
+            </section>             
+        </section>
+    </section>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+@mixin respond-to($width)
+    // esto tiene que ir dentro de un bloque para que cree el css de este selector
+    @media only screen and (max-width: $width) 
+        @content
+@mixin respond-to2($width)
+    // esto tiene que ir dentro de un bloque para que cree el css de este selector
+    @media only screen and (min-width: $width) 
+        @content  
